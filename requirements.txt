@@ -1,3 +1,5 @@
 pds.api-client==1.0.0
+astropy==4.2
+matplotlib==3.3.4
 jupyterlab==3.0.9
 
