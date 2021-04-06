@@ -1,4 +1,5 @@
 # PDS federated API demo, Osiris-Rex OVIRS data visualization
+# PART 1: EXPLORE A COLLECTION
 
 The purpose of this notebook is to demostrate how the PDS web API can be used to access the PDS data for a scientific use case.
 
@@ -7,8 +8,8 @@ The documention of the PDS web API is available on https://nasa-pds.github.io/pd
 This notebook is available on https://github.com/NASA-PDS/pds-api-notebook
 
 <b>2 Use cases:</b>
- - explore the collection
- - find specific the data you are interested in
+ - <u>Part1</u>: explore the collection
+ - <u>Part2</u>: find/visualize specific the data you are interested in
  
  <br/>
  
