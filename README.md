@@ -14,8 +14,19 @@ This repostory contains demo notebooks using the PDS API (see https://github.com
 # Quickstart
 
 
+    # Create a workspace for your virtual environment
+    mkdir $HOME/.virtualenvs; cd  $HOME/.virtualenvs
+    
+    # Create your virtual environment
     python -m venv venv
+    
+    # Source the virtual environment to get started
+    pds-api-notebook/bin/activate
+    
+    # Install the requirements
     pip install -r requirements.txt
+    
+    # Start-up
     jupyter-lab
     
     
