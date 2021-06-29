@@ -3,4 +3,4 @@ astropy==4.2
 matplotlib==3.3.4
 jupyterlab==3.0.9
 tqdm==4.59.0
-
+ipywidgets
