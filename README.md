@@ -18,7 +18,7 @@ This repostory contains demo notebooks using the PDS API (see https://github.com
     mkdir $HOME/.virtualenvs; cd  $HOME/.virtualenvs
     
     # Create your virtual environment
-    python -m venv venv
+    python -m venv pds-api-notebook
     
     # Source the virtual environment to get started
     pds-api-notebook/bin/activate
