@@ -36,7 +36,7 @@ import pds.api_client as pds_api
 
 ## Use the PDS demo web API server 
 
-Connect to the demo server. See User Interface of the web API: http://pds-gamma.jpl.nasa.gov/api/swagger-ui.html
+Connect to the demo server. See User Interface of the web API: https://pds-gamma.jpl.nasa.gov/api/swagger-ui.html
 
 <b>Note: </b> this piece of code will be wrapped into a helper function so that 1 line will be enough to connect to the API using a default host
 
@@ -45,7 +45,7 @@ Connect to the demo server. See User Interface of the web API: http://pds-gamma.
 configuration = pds_api.Configuration()
 
 # demo server
-configuration.host = 'http://pds-gamma.jpl.nasa.gov/api/'
+configuration.host = 'https://pds-gamma.jpl.nasa.gov/api/'
 
 api_client = pds_api.ApiClient(configuration)
 
@@ -256,7 +256,7 @@ print(product)
     {'description': None,
      'id': 'urn:nasa:pds:orex.ovirs:data_calibrated:20190321t204128s567_ovr_scil2.fits::1.0',
      'investigations': [{'description': None,
-                         'href': 'http://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:investigation:mission.orex',
+                         'href': 'https://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:investigation:mission.orex',
                          'id': 'urn:nasa:pds:context:investigation:mission.orex',
                          'title': None,
                          'type': None}],
@@ -265,12 +265,12 @@ print(product)
                   'update_date_time': None,
                   'version': '1.0'},
      'observing_system_components': [{'description': None,
-                                      'href': 'http://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:instrument_host:spacecraft.orex',
+                                      'href': 'https://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:instrument_host:spacecraft.orex',
                                       'id': 'urn:nasa:pds:context:instrument_host:spacecraft.orex',
                                       'title': None,
                                       'type': None},
                                      {'description': None,
-                                      'href': 'http://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:instrument:ovirs.orex',
+                                      'href': 'https://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:instrument:ovirs.orex',
                                       'id': 'urn:nasa:pds:context:instrument:ovirs.orex',
                                       'title': None,
                                       'type': None}],
@@ -664,7 +664,7 @@ print(product)
      'start_date_time': '2019-03-21T20:41:28.567Z',
      'stop_date_time': '2019-03-21T20:41:28.567Z',
      'targets': [{'description': None,
-                  'href': 'http://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:target:asteroid.101955_bennu',
+                  'href': 'https://pds-gamma.jpl.nasa.gov/products/urn:nasa:pds:context:target:asteroid.101955_bennu',
                   'id': 'urn:nasa:pds:context:target:asteroid.101955_bennu',
                   'title': None,
                   'type': None}],
