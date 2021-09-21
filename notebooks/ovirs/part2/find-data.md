@@ -36,7 +36,7 @@ import pds.api_client as pds_api
 
 ## Use the PDS demo web API server 
 
-Connect to the demo server. See User Interface of the web API: http://pds-gamma.jpl.nasa.gov/api/swagger-ui.html
+Connect to the demo server. See User Interface of the web API: https://pds-gamma.jpl.nasa.gov/api/swagger-ui.html
 
 <b>Note: </b> this piece of code will be wrapped into a helper function so that 1 line will be enough to connect to the API using a default host
 
@@ -45,7 +45,7 @@ Connect to the demo server. See User Interface of the web API: http://pds-gamma.
 configuration = pds_api.Configuration()
 
 # demo server
-configuration.host = 'http://pds-gamma.jpl.nasa.gov/api/'
+configuration.host = 'https://pds-gamma.jpl.nasa.gov/api/'
 
 api_client = pds_api.ApiClient(configuration)
 
