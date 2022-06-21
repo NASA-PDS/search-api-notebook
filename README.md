@@ -15,9 +15,10 @@ Run the following commands from a terminal and your default web browser should l
 ```console
 $ # Create a virtual Python environment to isolate Jupyter and PDS dependencies
 $ python3 -m venv pds-api-notebook-env
-$ pds-api-notebook-env/bin/pip install --upgrade --quiet pip
+$ source pds-api-notebook-env/bin/activate
+$ pip install --upgrade --quiet pip
 $ # Install the dependencies
-$ pds-api-notebook-env/bin/pip install --requirement requirements.txt
+$ pip install --requirement requirements.txt
 $ # Start it up
 $ pds-api-notebook-env/bin/jupyter-lab
 ```
