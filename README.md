@@ -14,12 +14,13 @@ Run the following commands from a terminal and your default web browser should l
 
 ```console
 $ # Create a virtual Python environment to isolate Jupyter and PDS dependencies
-$ python3 -m venv pds-api-notebook-env
+$ python3 -m venv venv
+$ source venv/bin/activate
 $ pip install --upgrade --quiet pip
 $ # Install the dependencies
 $ pip install --requirement requirements.txt
 $ # Start it up
-$ pds-api-notebook-env/bin/jupyter-lab
+$ jupyter-lab
 ```
     
 At this point you'll have a locally running JupyterLab server and your browser opened to it. (If not, point your browser to http://localhost:8888/lab).
@@ -28,8 +29,7 @@ From here, you can try out the PDS API notebooks in the `/notebooks/` folder in 
 
 -   `ovirs` contains demonstration notebooks for the [OSIRIS-REx Visible and InfraRed Spectrometer, OVIRS](https://www.asteroidmission.org). Within this folder are two sub-folders with the actual demonstration notebooks:
     -   `part1` has the notebook `explore-a-collection.ipynb` that shows how to get a get and explore a data collection with the API.
-    -   `part2` has a notebook `find-data.ipynb` that builds on `part1` and visualizes datasets within the collection; it has a second notebook `find-data-standalone.ipynb` that doesn't require `part1`.
--   `api-client` is a simple demonstration of using the PDS API client.
+    -   `part2` has a notebook `find-data-standalone.ipynb` that extracts a specific data collection subset.
 -   `wwt` exhibits using PDS data in [WWT](https://pywwt.readthedocs.io/) via the PDS API; note, however, that this is currently incomplete and is a work in progress.
 
 
