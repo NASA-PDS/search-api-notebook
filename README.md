@@ -29,7 +29,7 @@ From here, you can try out the PDS API notebooks in the `/notebooks/` folder in 
 
 -   `ovirs` contains demonstration notebooks for the [OSIRIS-REx Visible and InfraRed Spectrometer, OVIRS](https://www.asteroidmission.org). Within this folder are two sub-folders with the actual demonstration notebooks:
     -   `part1` has the notebook `explore-a-collection.ipynb` that shows how to get a get and explore a data collection with the API.
-    -   `part2` has a notebook `find-data-standalone.ipynb` that extracts a specific data collection subset.
+    -   `part2` has a notebook `find-data-standalone.ipynb` that extracts a specific data collection subset. A [demo video](https://drive.google.com/file/d/1emd34lMmYX9DnUjWRG9TSWZXAGHaC3Zq/view?usp=drive_link) of this notebook is available.
 -   `wwt` exhibits using PDS data in [WWT](https://pywwt.readthedocs.io/) via the PDS API; note, however, that this is currently incomplete and is a work in progress.
 
 
