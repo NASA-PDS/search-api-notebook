@@ -43,7 +43,7 @@ $ jupyter lab build
 $ # To start up 
 $ jupyter-lab
 ```
-Note that to interact with the pyWWT window, you must open a new tab in the jupyter notebook and select the AAS WorldWide Telescope icon:
+Note that to interact with the pyWWT window, you must open a new tab in the jupyter notebook and select the AAS WorldWide Telescope icon. For further instructions and troubleshooting, see the [pyWWT installation page](https://pywwt.readthedocs.io/en/stable/installation.html#install-pywwt-with-pip).
 
 ## 👥 Contributing
 
