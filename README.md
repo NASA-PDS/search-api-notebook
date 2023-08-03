@@ -30,13 +30,9 @@ From here, you can try out the PDS API notebooks in the `/notebooks/` folder in 
 -   `ovirs` contains demonstration notebooks for the [OSIRIS-REx Visible and InfraRed Spectrometer, OVIRS](https://www.asteroidmission.org). Within this folder are two sub-folders with the actual demonstration notebooks:
     -   `part1` has the notebook `explore-a-collection.ipynb` that shows how to get a get and explore a data collection with the API.
     -   `part2` has a notebook `find-data-standalone.ipynb` that extracts a specific data collection subset. A [demo video](https://www.youtube.com/watch?v=jTclsXR713Y) of this notebook is available.
--   `lro` exhibits using PDS data in [WWT](https://pywwt.readthedocs.io/) via the PDS API. Run the following commands to configure your notebook to run pyWWT. 
+-   `galileo magnetometer` exhibits using PDS data in [WWT](https://pywwt.readthedocs.io/) via the PDS API. Run the following commands to configure your notebook to run pyWWT. 
 
 ```console
-$ # Install pywwt with pip
-$ pip install pywwt
-$ # Set Up pywwt's JupyterLab Integration
-$ pip install wwt-kernel-data-relay  # or use conda
 $ jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
 $ jupyter labextension install --no-build @wwtelescope/jupyterlab
 $ jupyter lab build
