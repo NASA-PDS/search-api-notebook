@@ -14,3 +14,13 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/terraform/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "/docker/" # Location of package manifests
+    schedule:
+      interval: "weekly"
