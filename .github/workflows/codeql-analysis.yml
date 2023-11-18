@@ -1,0 +1,79 @@
+name: "CodeQL"
+
+on:
+  schedule:
+    - cron:  '0 0 * * 4'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    if: github.actor != 'pdsen-ci'
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # Override automatic language detection by changing the below list
+        # Supported options are ['csharp', 'cpp', 'go', 'java', 'javascript', 'python']
+#         language: ['java', 'python']
+        language: ['java']
+        # Learn more...
+        # https://docs.github.com/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#overriding-automatic-language-detection
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # We must fetch at least the immediate parents so that if this is
+        # a pull request then we can checkout the head.
+        fetch-depth: 2
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+         languages: ${{ matrix.language }}
+         queries: security-and-quality, security-extended
+
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    # ℹ️ Command-line programs to run using the OS shell.
+    # 📚 https://git.io/JvXDl
+
+    # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
+    #    and modify them (or add more) to build your code if your project
+    #    uses a compiled language
+
+#     - run: |
+#       mvn clean compile site -DskipTests
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      
+    - run: |
+        pip install nasa-scrub
+        
+        results_dir=`realpath ${{ github.workspace }}/../results`
+        sarif_files=`find $results_dir -name '*.sarif'`
+        
+        for sarif_file in $sarif_files
+        do
+          output_file="$results_dir/$(basename $sarif_file .sarif).scrub"
+          
+          python3 -m scrub.tools.parsers.translate_results $sarif_file $output_file ${{ github.workspace }} scrub
+        done
+        
+        python3 -m scrub.tools.parsers.csv_parser $results_dir
+        
+        echo "RESULTS_DIR=$results_dir" >> $GITHUB_ENV
+        
+      
+    - name: Upload CodeQL Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: codeql-artifacts
+        path: ${{ env.RESULTS_DIR }}
