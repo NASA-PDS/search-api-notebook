@@ -1,7 +1,7 @@
 astropy==5.3.1
 ipywidgets==8.1.0
 ipyleaflet==0.17.3
-leafmap==0.23.3
+leafmap==0.31.1
 jupyterlab==3.6.5
 matplotlib==3.3.4
 pds4-tools==1.3
