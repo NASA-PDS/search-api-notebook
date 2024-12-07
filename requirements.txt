@@ -16,3 +16,5 @@ pywwt==0.20.0
 wwt-kernel-data-relay==0.2.0
 pdr~=1.3.0
 pds.peppi~=0.4.0
+planetarypy==0.32.0  # cd ..
+requires gdal > 3.8, install on macos with brew install gdal
