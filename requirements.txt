@@ -17,8 +17,9 @@ wwt-jupyterlab-extension~=2.0.2
 jupyterlab-widgets~=3.0.16
 ipykernel~=6.30.1
 pdr~=1.3.0
-#pds.peppi ~= 0.8.0
-pds.peppi @ git+https://github.com/NASA-PDS/peppi.git@python312
+pds.peppi ~= 0.8.1
+# for development version of peppi, use the following line instead
+# pds.peppi @ git+https://github.com/NASA-PDS/peppi.git@python312
 
 # not used yet since it does not work with Galileo
 #planetarypy==0.32.0 

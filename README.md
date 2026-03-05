@@ -24,7 +24,7 @@ Create a virtual environment and install the dependencies
 
 ```console
 $ # Create a virtual Python environment to isolate Jupyter and PDS dependencies
-$ python3 -m venv venv
+$ python3.12 -m venv venv
 $ source venv/bin/activate
 $ pip install --upgrade --quiet pip
 $ # Install the dependencies
@@ -41,11 +41,6 @@ At this point you'll have a locally running JupyterLab server and your browser o
 
 From here, you can try out the PDS API notebooks in the `/notebooks/` folder in the file tree on the left side.
 
-
-```console
-$ # To start up 
-$ jupyter-lab
-```
 Note that to interact with the pyWWT window, you must open a new tab in the jupyter notebook and select the AAS WorldWide Telescope icon. For further instructions and troubleshooting, see the [pyWWT installation page](https://pywwt.readthedocs.io/en/stable/installation.html#install-pywwt-with-pip).
 
 ## 👥 Contributing
