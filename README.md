@@ -5,40 +5,42 @@ This repository contains example [JupyterLab notebooks](https://jupyter.org) for
 
 ## 🖥 Prerequisites
 
-To run these notebooks locally, you'll need [Python 3.7](https://python.org/) or later as well as a web browser.
+To run these notebooks locally, you'll need [Python 3.12](https://python.org/) or later as well as a web browser.
+Latest tests have been done with python3.12, but the notebooks should work with any version of python3.7 or later.
 
 
 ## 🏃‍♀️ Getting Started
 
 Run the following commands from a terminal and your default web browser should launch:
 
+Clone the current repository:
+
+```console
+    git clone https://github.com/NASA-PDS/search-api-notebook.git
+    cd search-api-notebook
+```
+
+Create a virtual environment and install the dependencies
+
 ```console
 $ # Create a virtual Python environment to isolate Jupyter and PDS dependencies
-$ python3 -m venv venv
+$ python3.12 -m venv venv
 $ source venv/bin/activate
 $ pip install --upgrade --quiet pip
 $ # Install the dependencies
 $ pip install --requirement requirements.txt
-$ # Start it up
+```
+
+And start JupyterLab where your code will run:
+
+```console
 $ jupyter-lab
 ```
     
 At this point you'll have a locally running JupyterLab server and your browser opened to it. (If not, point your browser to http://localhost:8888/lab).
 
-From here, you can try out the PDS API notebooks in the `/notebooks/` folder in the file tree on the left side:
+From here, you can try out the PDS API notebooks in the `/notebooks/` folder in the file tree on the left side.
 
--   `ovirs` contains demonstration notebooks for the [OSIRIS-REx Visible and InfraRed Spectrometer, OVIRS](https://www.asteroidmission.org). Within this folder are two sub-folders with the actual demonstration notebooks:
-    -   `part1` has the notebook `explore-a-collection.ipynb` that shows how to get a get and explore a data collection with the API.
-    -   `part2` has a notebook `find-data-standalone.ipynb` that extracts a specific data collection subset. A [demo video](https://www.youtube.com/watch?v=jTclsXR713Y) of this notebook is available.
--   `galileo magnetometer` exhibits using PDS data in [WWT](https://pywwt.readthedocs.io/) via the PDS API. Run the following commands to configure your notebook to run pyWWT. 
-
-```console
-$ jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
-$ jupyter labextension install --no-build @wwtelescope/jupyterlab
-$ jupyter lab build
-$ # To start up 
-$ jupyter-lab
-```
 Note that to interact with the pyWWT window, you must open a new tab in the jupyter notebook and select the AAS WorldWide Telescope icon. For further instructions and troubleshooting, see the [pyWWT installation page](https://pywwt.readthedocs.io/en/stable/installation.html#install-pywwt-with-pip).
 
 ## 👥 Contributing
