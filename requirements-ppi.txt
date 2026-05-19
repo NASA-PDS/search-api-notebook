@@ -1,0 +1,14 @@
+# Dependencies for notebooks/discipline/ppi/
+# Covers: GLL_MagPlot, pandas_data_read
+
+astropy~=7.2.0
+matplotlib~=3.10.8
+numpy~=1.26.0
+pandas~=2.2.3
+pds.peppi~=0.8.1
+pds4-tools~=1.4
+pywwt~=0.26.0
+wwt-kernel-data-relay~=0.3.0
+wwt-jupyterlab-extension~=2.0.2
+requests~=2.32.2
+spiceypy~=8.0.2
