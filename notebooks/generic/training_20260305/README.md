@@ -5,7 +5,7 @@ Introductory notebooks from the March 2026 PDS API training session. Designed fo
 ## Installation
 
 ```bash
-pip install -r requirements-training.txt
+pip install --requirement requirements-training.txt
 ```
 
 Run from the repository root. Then start JupyterLab:

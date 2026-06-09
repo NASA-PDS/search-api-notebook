@@ -54,6 +54,12 @@ $ pip install --requirement requirements-peppi-advanced.txt   # example
 
 Each notebook directory also has a `README.md` describing its notebooks and the exact install command.
 
+Then install JupyterLab (not included in the per-discipline files):
+
+```console
+$ pip install jupyterlab
+```
+
 And start JupyterLab where your code will run:
 
 ```console

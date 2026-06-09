@@ -5,7 +5,7 @@ Notebooks demonstrating PDS API access for plasma and magnetometer data, includi
 ## Installation
 
 ```bash
-pip install -r requirements-ppi.txt
+pip install --requirement requirements-ppi.txt
 ```
 
 Run from the repository root. Then start JupyterLab:
@@ -14,12 +14,7 @@ Run from the repository root. Then start JupyterLab:
 jupyter-lab
 ```
 
-> **Note:** The `GLL_MagPlot` notebook uses pyWWT for 3D visualization. After installing, you may need to enable the JupyterLab extension:
-> ```bash
-> jupyter labextension install @wwtelescope/jupyterlab
-> jupyter lab build
-> ```
-> Open a separate tab with the AAS WorldWide Telescope icon to interact with the WWT window.
+> **Note:** The `GLL_MagPlot` notebook uses pyWWT for 3D visualization. Open a separate tab with the AAS WorldWide Telescope icon to interact with the WWT window.
 
 ## Notebooks
 

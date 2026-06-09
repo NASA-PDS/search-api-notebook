@@ -5,7 +5,7 @@ Notebooks demonstrating PDS API access for geosciences data, including radio sci
 ## Installation
 
 ```bash
-pip install -r requirements-geo.txt
+pip install --requirement requirements-geo.txt
 ```
 
 Run from the repository root. Then start JupyterLab:

@@ -5,7 +5,7 @@ Lightweight utility notebooks demonstrating basic PDS API access patterns and da
 ## Installation
 
 ```bash
-pip install -r requirements-simple.txt
+pip install --requirement requirements-simple.txt
 ```
 
 Run from the repository root. Then start JupyterLab:

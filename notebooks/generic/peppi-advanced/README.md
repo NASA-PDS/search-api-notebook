@@ -83,7 +83,7 @@ Create flexible, reusable search functions. Learn how to:
 From the repository root:
 
 ```bash
-pip install -r requirements-peppi-advanced.txt
+pip install --requirement requirements-peppi-advanced.txt
 jupyter lab
 ```
 

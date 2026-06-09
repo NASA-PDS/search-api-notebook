@@ -5,7 +5,7 @@ Notebooks demonstrating PDS API access for imaging data, with interactive map vi
 ## Installation
 
 ```bash
-pip install -r requirements-img.txt
+pip install --requirement requirements-img.txt
 ```
 
 Run from the repository root. Then start JupyterLab:

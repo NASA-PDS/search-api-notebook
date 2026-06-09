@@ -5,7 +5,7 @@ Notebooks demonstrating PDS API access for small bodies data, including OSIRIS-R
 ## Installation
 
 ```bash
-pip install -r requirements-sbn.txt
+pip install --requirement requirements-sbn.txt
 ```
 
 Run from the repository root. Then start JupyterLab:
