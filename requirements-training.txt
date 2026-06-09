@@ -1,0 +1,6 @@
+# Dependencies for notebooks/generic/training_20260305/
+# Covers: 01_peppi_start, 02_direct_api_access, 03_data_with_doi, 04_peppi_with_doi
+
+pandas~=2.2.3
+pds.peppi~=0.8.1
+requests~=2.32.2

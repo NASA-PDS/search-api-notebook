@@ -75,18 +75,15 @@ Create flexible, reusable search functions. Learn how to:
 
 ## Prerequisites
 
-- Python 3.13 or newer
-- Peppi library: `pip install pds.peppi`
-- JupyterLab or Jupyter Notebook
+- Python 3.12 or newer
 - Basic familiarity with Peppi (see [Getting Started Guide](https://nasa-pds.github.io/peppi/getting_started.html))
 
 ## Installation
 
-```bash
-# Install dependencies
-pip install pds.peppi jupyterlab pandas matplotlib
+From the repository root:
 
-# Start JupyterLab
+```bash
+pip install --requirement requirements-peppi-advanced.txt
 jupyter lab
 ```
 

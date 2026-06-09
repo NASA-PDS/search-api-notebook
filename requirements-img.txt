@@ -1,0 +1,11 @@
+# Dependencies for notebooks/discipline/img/
+# Covers: leafmap_mess
+
+geopandas~=0.13.2
+ipyleaflet~=0.20.0
+leafmap~=0.60.2
+numpy~=1.26.0
+pandas~=2.2.3
+pds.peppi~=0.8.1
+pds4-tools~=1.4
+requests~=2.32.2

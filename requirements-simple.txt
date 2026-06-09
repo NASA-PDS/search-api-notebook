@@ -1,0 +1,6 @@
+# Dependencies for notebooks/generic/simple/
+# Covers: tab-to-csv
+
+pandas~=2.2.3
+pdr~=1.3.0
+pds.peppi~=0.8.1

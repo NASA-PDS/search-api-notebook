@@ -1,0 +1,6 @@
+# Dependencies for notebooks/generic/peppi-advanced/
+# Covers: recipes 13-20
+
+matplotlib~=3.10.8
+pandas~=2.2.3
+pds.peppi~=0.8.1

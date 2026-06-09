@@ -20,15 +20,44 @@ Clone the current repository:
     cd search-api-notebook
 ```
 
-Create a virtual environment and install the dependencies
+Create a virtual environment:
 
 ```console
-$ # Create a virtual Python environment to isolate Jupyter and PDS dependencies
 $ python3.12 -m venv venv
 $ source venv/bin/activate
 $ pip install --upgrade --quiet pip
-$ # Install the dependencies
+```
+
+**Option A — Install everything** (all notebooks, all dependencies):
+
+```console
 $ pip install --requirement requirements.txt
+```
+
+**Option B — Install only what you need** (faster, fewer packages):
+
+Each discipline has its own requirements file. Install only the one matching the notebooks you want to run:
+
+| Directory | Requirements file | Key packages |
+|-----------|-------------------|--------------|
+| `notebooks/discipline/geo/` | `requirements-geo.txt` | astropy, pds.peppi, pds4-tools, pdr |
+| `notebooks/discipline/img/` | `requirements-img.txt` | geopandas, leafmap, pds.peppi |
+| `notebooks/discipline/ppi/` | `requirements-ppi.txt` | astropy, pywwt, spiceypy, pds.peppi |
+| `notebooks/discipline/sbn/` | `requirements-sbn.txt` | pds.peppi, pds.api_client, pdr |
+| `notebooks/generic/peppi-advanced/` | `requirements-peppi-advanced.txt` | pds.peppi, pandas, matplotlib |
+| `notebooks/generic/simple/` | `requirements-simple.txt` | pds.peppi, pdr, pandas |
+| `notebooks/generic/training_20260305/` | `requirements-training.txt` | pds.peppi, pandas, requests |
+
+```console
+$ pip install --requirement requirements-peppi-advanced.txt   # example
+```
+
+Each notebook directory also has a `README.md` describing its notebooks and the exact install command.
+
+Then install JupyterLab (not included in the per-discipline files):
+
+```console
+$ pip install jupyterlab
 ```
 
 And start JupyterLab where your code will run:
@@ -36,7 +65,7 @@ And start JupyterLab where your code will run:
 ```console
 $ jupyter-lab
 ```
-    
+
 At this point you'll have a locally running JupyterLab server and your browser opened to it. (If not, point your browser to http://localhost:8888/lab).
 
 From here, you can try out the PDS API notebooks in the `/notebooks/` folder in the file tree on the left side.
